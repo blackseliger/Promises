@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import read from './reader';
 import json from './parser';
 
@@ -10,9 +11,7 @@ export default class GameSavingLoader {
   }
 }
 
-GameSavingLoader.load().then((saving) => {
-  return saving;
-});
+GameSavingLoader.load().then((saving) => saving);
 // const data = read(); // возвращается Promise!
 // const value = json(data); // возвращается Promise!
 // return value;
